@@ -11,7 +11,7 @@ public class GateEntity {
 
     @Id
     @Column(name = "Codigo")
-    Integer codigo;
+    Integer Sessao_Gate;
 
     @Column(name = "cpfmotorista")
     String CPFMotorista;
@@ -28,12 +28,12 @@ public class GateEntity {
     @Column(name = "Descricao")
     String Descricao;
 
-    public Integer getCodigo() {
-        return codigo;
+    public Integer getSessao_Gate() {
+        return Sessao_Gate;
     }
 
-    public void setCodigo(Integer codigo) {
-        this.codigo = codigo;
+    public void setSessao_Gate(Integer Sessao_Gate) {
+        this.Sessao_Gate = Sessao_Gate;
     }
 
     public String getCPFMotorista() {
