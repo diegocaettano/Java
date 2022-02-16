@@ -14,7 +14,7 @@ public interface ControladoraRepository extends JpaRepository<ControladoraEntity
     @Query("FROM ControladoraEntity")
     public List<ControladoraEntity> getAll();
 
-    @Query(value= "SELECT TOP 1 * FROM LOG_aCESSO  WHERE CD_EQUIPAMENTO=:cD_EQUIPAMENTO ORDER BY CD_LOG_ACESSO DESC", nativeQuery = true)
+    @Query(value= "SELECT TOP 1 * FROM LOG_ACESSO_TESTE  WHERE CD_EQUIPAMENTO=:cD_EQUIPAMENTO ORDER BY CD_LOG_ACESSO DESC", nativeQuery = true)
     Optional<ControladoraEntity> findByCD_EQUIPAMENTO(Integer cD_EQUIPAMENTO);
 
 
