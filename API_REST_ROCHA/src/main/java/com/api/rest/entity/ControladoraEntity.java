@@ -6,7 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "LOG_ACESSO2")
+@Table(name = "LOG_ACESSO")
 public class ControladoraEntity {
 
     @Id

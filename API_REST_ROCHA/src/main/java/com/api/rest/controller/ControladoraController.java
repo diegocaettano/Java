@@ -55,6 +55,27 @@ public class ControladoraController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
+    @RequestMapping(value = "api/controladores/equipamentos/BSR01/{CD_EQUIPAMENTO}", method = RequestMethod.GET)
+    public ResponseEntity<ControladoraEntity> getByCD_EQUIPAMENTOBSR01(@PathVariable(value = "CD_EQUIPAMENTO") Integer equip)
+    {
+        Optional<ControladoraEntity> infoAcesso = ControladoraRepo2.findByCD_EQUIPAMENTOBSR01(equip);
+        if(infoAcesso.isPresent())
+            return new ResponseEntity<ControladoraEntity>(infoAcesso.get(), HttpStatus.OK);
+        else
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
+
+    @RequestMapping(value = "api/controladores/equipamentos/BSR02/{CD_EQUIPAMENTO}", method = RequestMethod.GET)
+    public ResponseEntity<ControladoraEntity> getByCD_EQUIPAMENTOBSR02(@PathVariable(value = "CD_EQUIPAMENTO") Integer equip)
+    {
+        Optional<ControladoraEntity> infoAcesso = ControladoraRepo2.findByCD_EQUIPAMENTOBSR02(equip);
+        if(infoAcesso.isPresent())
+            return new ResponseEntity<ControladoraEntity>(infoAcesso.get(), HttpStatus.OK);
+        else
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
+
+
 
     @Autowired
     private GateRepository GateRepo;
