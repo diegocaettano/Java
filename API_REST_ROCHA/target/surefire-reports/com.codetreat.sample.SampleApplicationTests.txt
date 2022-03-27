@@ -1,7 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.codetreat.sample.SampleApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.278 s <<< FAILURE! - in com.codetreat.sample.SampleApplicationTests
-com.codetreat.sample.SampleApplicationTests  Time elapsed: 0.277 s  <<< ERROR!
-java.lang.IllegalStateException: Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test
-

@@ -1,0 +1,8 @@
+com\api\rest\Application.class
+com\api\rest\controller\ConfigurationCors.class
+com\api\rest\entity\ControladoraEntity.class
+com\api\rest\controller\ControladoraController.class
+com\api\rest\service\ControladoraService.class
+com\api\rest\repository\GateRepository.class
+com\api\rest\entity\GateEntity.class
+com\api\rest\repository\ControladoraRepository.class
